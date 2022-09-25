@@ -1,0 +1,10 @@
+1.split the array into half as many times as possible until you get an array with 1 element
+2.then compare 2 arrays which are at this point (1) element each
+3.the smaller element goes to the index 0 of a new hypothetical array
+4.the element/array remaining that was larger goes to the next position in the same hypothetical array 
+5.so now the hypothetical array has 2 elements eg. [1,2]
+6.compare this array with an array with 1 element eg [5], repeating steps 2-4
+7. when comparing 2 arrays with multiple elements(which have been merged), use the first element of each array to compare
+8. when one array becomes empty after adding the elements into the hypothetical array, just add all the other elements as is in the other array into the hypothetical array
+
+in the end there are 2 half arrays remaining for which follow steps 3-7
